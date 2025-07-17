@@ -24,17 +24,29 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				
+				// BeachLovers Tropical Color System
+				'tropical-blue': {
+					DEFAULT: 'hsl(var(--tropical-blue))',
+					light: 'hsl(var(--tropical-blue-light))',
+					dark: 'hsl(var(--tropical-blue-dark))',
+				},
+				'warm-gold': 'hsl(var(--warm-gold))',
+				'warm-sand': 'hsl(var(--warm-sand))',
+				'warm-accent': 'hsl(var(--warm-accent))',
+				'deep-ocean': {
+					DEFAULT: 'hsl(var(--deep-ocean))',
+					light: 'hsl(var(--deep-ocean-light))',
+				},
+				
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					glow: 'hsl(var(--primary-glow))',
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
 					foreground: 'hsl(var(--secondary-foreground))'
-				},
-				destructive: {
-					DEFAULT: 'hsl(var(--destructive))',
-					foreground: 'hsl(var(--destructive-foreground))'
 				},
 				muted: {
 					DEFAULT: 'hsl(var(--muted))',
@@ -44,24 +56,25 @@ export default {
 					DEFAULT: 'hsl(var(--accent))',
 					foreground: 'hsl(var(--accent-foreground))'
 				},
-				popover: {
-					DEFAULT: 'hsl(var(--popover))',
-					foreground: 'hsl(var(--popover-foreground))'
-				},
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				}
+			},
+			backgroundImage: {
+				'gradient-tropical': 'var(--gradient-tropical)',
+				'gradient-sunset': 'var(--gradient-sunset)',
+				'gradient-ocean': 'var(--gradient-ocean)',
+				'gradient-glass': 'var(--gradient-glass)',
+			},
+			boxShadow: {
+				'neumorphic': 'var(--shadow-neumorphic)',
+				'glass': 'var(--shadow-glass)',
+				'glow': 'var(--shadow-glow)',
+				'luxury': 'var(--shadow-luxury)',
+			},
+			transitionTimingFunction: {
+				'luxury': 'cubic-bezier(0.23, 1, 0.32, 1)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
