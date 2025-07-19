@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Facebook, Instagram, Linkedin, Youtube, MessageCircle } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Linkedin, Youtube, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -31,7 +31,7 @@ const Footer = () => {
   return (
     <footer className="bg-deep-ocean border-t border-border">
       <div className="container mx-auto max-w-7xl px-6 py-16">
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8 mb-12">
+        <div className="grid lg:grid-cols-5 md:grid-cols-2 gap-8 mb-12">
           {/* Company Information */}
           <div className="lg:col-span-1">
             <div className="mb-6">
@@ -41,28 +41,60 @@ const Footer = () => {
               </p>
             </div>
 
-            <div className="space-y-3">
+            <div className="mt-6 glass-card p-4 rounded-2xl">
+              <h5 className="text-primary font-medium mb-2 text-sm">Why Choose BeachLovers?</h5>
+              <ul className="text-foreground/70 text-xs space-y-1">
+                <li>• Up to 90% financing available</li>
+                <li>• Full-service property management</li>
+                <li>• Legal and construction support</li>
+                <li>• International client experience</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Contact Information */}
+          <div className="lg:col-span-2">
+            <h4 className="text-foreground font-medium mb-4">Get in Touch</h4>
+            <div className="grid gap-4">
               <div className="flex items-start space-x-3">
-                <MapPin size={16} strokeWidth={1.5} className="text-primary mt-0.5" />
-                <div className="text-foreground/80 text-sm">
-                  Cartagena, Colombia<br />
-                  Historic Center District
+                <MapPin size={16} strokeWidth={1.5} className="text-primary mt-1" />
+                <div>
+                  <h5 className="text-foreground font-medium text-sm mb-1">Office Location</h5>
+                  <p className="text-foreground/70 text-xs">Cartagena, Colombia</p>
+                  <p className="text-foreground/70 text-xs">Historic Center District</p>
                 </div>
               </div>
-              
-              <div className="flex items-center space-x-3">
-                <Phone size={16} strokeWidth={1.5} className="text-primary" />
-                <span className="text-foreground/80 text-sm">+57 (5) 123-4567</span>
+
+              <div className="flex items-start space-x-3">
+                <Phone size={16} strokeWidth={1.5} className="text-primary mt-1" />
+                <div>
+                  <h5 className="text-foreground font-medium text-sm mb-1">Phone</h5>
+                  <p className="text-foreground/70 text-xs">+57 (5) 123-4567</p>
+                  <p className="text-foreground/70 text-xs">WhatsApp Available</p>
+                </div>
               </div>
-              
-              <div className="flex items-center space-x-3">
-                <Mail size={16} strokeWidth={1.5} className="text-primary" />
-                <span className="text-foreground/80 text-sm">info@beachlovers.com</span>
+
+              <div className="flex items-start space-x-3">
+                <Mail size={16} strokeWidth={1.5} className="text-primary mt-1" />
+                <div>
+                  <h5 className="text-foreground font-medium text-sm mb-1">Email</h5>
+                  <p className="text-foreground/70 text-xs">info@beachlovers.com</p>
+                  <p className="text-foreground/70 text-xs">properties@beachlovers.com</p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-3">
+                <Clock size={16} strokeWidth={1.5} className="text-primary mt-1" />
+                <div>
+                  <h5 className="text-foreground font-medium text-sm mb-1">Business Hours</h5>
+                  <p className="text-foreground/70 text-xs">Mon - Fri: 9:00 AM - 6:00 PM COT</p>
+                  <p className="text-foreground/70 text-xs">Sat: 10:00 AM - 4:00 PM COT</p>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Quick Links & Legal */}
           <div>
             <h4 className="text-foreground font-medium mb-4">Explore</h4>
             <ul className="space-y-2">
@@ -77,11 +109,8 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
-
-          {/* Legal Links */}
-          <div>
-            <h4 className="text-foreground font-medium mb-4">Legal</h4>
+            
+            <h4 className="text-foreground font-medium mb-4 mt-6">Legal</h4>
             <ul className="space-y-2">
               {legalLinks.map((link) => (
                 <li key={link.href}>

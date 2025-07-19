@@ -2,12 +2,13 @@ import { useState, useEffect } from 'react';
 import Navigation from '../components/Navigation';
 import Hero from '../components/Hero';
 import TropicalParadise from '../components/TropicalParadise';
+import MessageForm from '../components/MessageForm';
 import Products from '../components/Products';
 import Pricing from '../components/Pricing';
 import LatestInsights from '../components/LatestInsights';
 import Gallery from '../components/Gallery';
 import Testimonials from '../components/Testimonials';
-import Contact from '../components/Contact';
+import AboutUs from '../components/AboutUs';
 import Footer from '../components/Footer';
 
 const Index = () => {
@@ -45,12 +46,13 @@ const Index = () => {
       <main className={`transition-all duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
         <Hero />
         <TropicalParadise />
+        <MessageForm />
         <Products />
         <Pricing />
         <LatestInsights />
         <Gallery />
         <Testimonials />
-        <Contact />
+        <AboutUs />
       </main>
       
       <Footer />
