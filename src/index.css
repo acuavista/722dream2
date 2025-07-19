@@ -7,9 +7,9 @@
 
 @layer base {
   :root {
-    /* Tropical Color Palette - Inspired by Mockup */
-    --background: 195 35% 12%;
-    --foreground: 180 15% 95%;
+    /* Tropical Color Palette - Inspired by Purple Mockup */
+    --background: 260 70% 25%;
+    --foreground: 0 0% 5%;
     
     /* Tropical Ocean Blues */
     --tropical-blue: 195 85% 65%;
@@ -21,9 +21,9 @@
     --warm-sand: 35 45% 75%;
     --warm-accent: 35 85% 55%;
     
-    /* Deep Ocean - Enhanced for Mockup Feel */
-    --deep-ocean: 195 45% 18%;
-    --deep-ocean-light: 195 35% 28%;
+    /* Deep Purple - Enhanced for Mockup Feel */
+    --deep-ocean: 260 70% 15%;
+    --deep-ocean-light: 260 50% 35%;
     
     /* Luxury Glass */
     --glass: 180 15% 95% / 0.1;
@@ -53,7 +53,7 @@
     /* Luxury Gradients */
     --gradient-tropical: linear-gradient(135deg, hsl(var(--tropical-blue)), hsl(var(--tropical-blue-light)));
     --gradient-sunset: linear-gradient(135deg, hsl(var(--warm-gold)), hsl(var(--warm-accent)));
-    --gradient-ocean: linear-gradient(180deg, hsl(var(--deep-ocean)), hsl(var(--deep-ocean-light)), hsl(var(--background)));
+    --gradient-ocean: linear-gradient(180deg, hsl(260 90% 20%), hsl(260 70% 35%), hsl(260 70% 25%));
     --gradient-glass: linear-gradient(135deg, hsl(var(--glass)), hsl(var(--glass-border)));
     
     /* Luxury Shadows */

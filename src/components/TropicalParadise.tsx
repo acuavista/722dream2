@@ -1,4 +1,7 @@
 import { ArrowRight, MapPin, TrendingUp, Clock } from 'lucide-react';
+import tropicalBeach1 from '../assets/tropical-beach-1.jpg';
+import tropicalBeach2 from '../assets/tropical-beach-2.jpg';
+import tropicalBeach3 from '../assets/tropical-beach-3.jpg';
 
 const TropicalParadise = () => {
   const cards = [
@@ -7,7 +10,7 @@ const TropicalParadise = () => {
       title: 'Why Cartagena',
       description: 'The rich and famous spend millions of dollars to buy their private tropical hideaways, and enjoy the summer sun, sand and surf all year around. Now you too can delight in these same pleasures at a fraction of what they pay. Welcome to Cartagena, Colombia.',
       icon: <MapPin size={24} strokeWidth={1.5} />,
-      image: '/lovable-uploads/b32d42c0-a8ef-42d6-87e1-a1647f54bb9a.png',
+      image: tropicalBeach1,
       link: '/why-cartagena'
     },
     {
@@ -15,7 +18,7 @@ const TropicalParadise = () => {
       title: 'Why Properties',
       description: 'Over the past five years, property values in Cartagena have appreciated between 8% and 12% annually. The city has seen a surge in both domestic and foreign demand, from vacation homeowners to entrepreneurs drawn to the warm climate.',
       icon: <TrendingUp size={24} strokeWidth={1.5} />,
-      image: '/lovable-uploads/b32d42c0-a8ef-42d6-87e1-a1647f54bb9a.png',
+      image: tropicalBeach2,
       link: '/why-properties'
     },
     {
@@ -23,7 +26,7 @@ const TropicalParadise = () => {
       title: 'Why Now',
       description: 'With over 3.5 million visitors in 2024, Cartagena\'s international profile is growing rapidly. With the completion of the 2nd international airport, the city is expecting to quadruple visitors. Those who act now get in on the ground floor.',
       icon: <Clock size={24} strokeWidth={1.5} />,
-      image: '/lovable-uploads/b32d42c0-a8ef-42d6-87e1-a1647f54bb9a.png',
+      image: tropicalBeach3,
       link: '/why-now'
     }
   ];

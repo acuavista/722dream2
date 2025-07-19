@@ -25,15 +25,19 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        <h1 className="text-foreground mb-6 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+        <h1 className="text-black mb-6 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
           BeachLovers
         </h1>
         
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-light text-warm-gold mb-8 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-          Own Your Slice of this Tropical Paradise - Easy Financing
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-light text-black mb-4 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+          Own Your Slice of this Tropical Paradise
         </h2>
         
-        <p className="text-lg md:text-xl text-foreground/90 mb-12 max-w-2xl mx-auto leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-light text-black mb-8 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
+          Easy Financing
+        </h2>
+        
+        <p className="text-lg md:text-xl text-black/90 mb-12 max-w-2xl mx-auto leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
           Access to luxuriant beachfront experiences is no longer exclusively for the rich and famous. 
           You don't have to wait until retirement to enjoy the good life of sun, sand, and tropical beaches.
         </p>
