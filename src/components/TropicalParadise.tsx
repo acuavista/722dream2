@@ -1,33 +1,54 @@
-import { ArrowRight, MapPin, TrendingUp, Clock } from 'lucide-react';
+import { Star, Waves, Trees, Home, TrendingUp, Users, MapPin, DollarSign } from 'lucide-react';
 import tropicalBeach1 from '../assets/tropical-beach-1.jpg';
 import tropicalBeach2 from '../assets/tropical-beach-2.jpg';
 import tropicalBeach3 from '../assets/tropical-beach-3.jpg';
 
 const TropicalParadise = () => {
-  const cards = [
+  const lotPlans = [
     {
-      id: 'why-cartagena',
-      title: 'Why Cartagena',
-      description: 'The rich and famous spend millions of dollars to buy their private tropical hideaways, and enjoy the summer sun, sand and surf all year around. Now you too can delight in these same pleasures at a fraction of what they pay. Welcome to Cartagena, Colombia.',
-      icon: <MapPin size={24} strokeWidth={1.5} />,
+      title: "Premium Beachfront",
+      description: "Wake up to the Caribbean Sea. Direct access to pristine sands and unparalleled views. Your ultimate luxury escape.",
+      basePrice: "$200,000",
+      sqftPrice: "$100/sf",
+      size: "2,000 sf",
       image: tropicalBeach1,
-      link: '/why-cartagena'
+      benefits: [
+        { icon: TrendingUp, text: "Highest appreciation potential" },
+        { icon: MapPin, text: "Exclusive front-row location" },
+        { icon: Home, text: "Ultimate privacy" },
+        { icon: Waves, text: "Direct ocean access" }
+      ],
+      recommended: false
     },
     {
-      id: 'why-properties',
-      title: 'Why Properties',
-      description: 'Over the past five years, property values in Cartagena have appreciated between 8% and 12% annually. The city has seen a surge in both domestic and foreign demand, from vacation homeowners to entrepreneurs drawn to the warm climate.',
-      icon: <TrendingUp size={24} strokeWidth={1.5} />,
+      title: "Beach Access",
+      description: "Just steps from the shore. Enjoy beach living without the beachfront premium. The perfect balance of value and convenience.",
+      basePrice: "$140,000",
+      sqftPrice: "$70/sf",
+      size: "2,000 sf",
       image: tropicalBeach2,
-      link: '/why-properties'
+      benefits: [
+        { icon: DollarSign, text: "Strong investment return" },
+        { icon: Star, text: "Accessible luxury" },
+        { icon: Users, text: "Vibrant community proximity" },
+        { icon: TrendingUp, text: "Ideal for rental income" }
+      ],
+      recommended: true
     },
     {
-      id: 'why-now',
-      title: 'Why Now',
-      description: 'With over 3.5 million visitors in 2024, Cartagena\'s international profile is growing rapidly. With the completion of the 2nd international airport, the city is expecting to quadruple visitors. Those who act now get in on the ground floor.',
-      icon: <Clock size={24} strokeWidth={1.5} />,
+      title: "Paradise Parcels",
+      description: "Secluded havens nestled amidst lush Colombian landscapes. Ideal for tranquil retreats and connecting with nature.",
+      basePrice: "$55,000",
+      sqftPrice: "$27.5/sf", 
+      size: "2,000 sf",
       image: tropicalBeach3,
-      link: '/why-now'
+      benefits: [
+        { icon: DollarSign, text: "Most affordable entry" },
+        { icon: Trees, text: "Peaceful retreat" },
+        { icon: Trees, text: "Expansive greenery" },
+        { icon: TrendingUp, text: "Strong long-term growth" }
+      ],
+      recommended: false
     }
   ];
 
@@ -35,46 +56,74 @@ const TropicalParadise = () => {
     <section id="why-cartagena" className="py-20 px-6 fade-in-on-scroll">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16">
-          <h2 className="text-foreground mb-6">Your Tropical Paradise</h2>
-          <p className="text-lg text-foreground/80 max-w-2xl mx-auto">
-            Discover why Cartagena, Colombia is the perfect destination for your tropical property investment
+          <h2 className="text-foreground mb-6">Welcome to Your Tropical Paradise: Sand, Sun, and Beach Galore</h2>
+          <p className="text-lg text-foreground/80 max-w-3xl mx-auto">
+            A clear, elegant, and comparison-friendly presentation of lot categories. Each lot plan designed to make your Caribbean dreams a reality.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {cards.map((card, index) => (
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+          {lotPlans.map((plan, index) => (
             <div
-              key={card.id}
-              className="glass-card p-8 rounded-3xl group cursor-pointer fade-in-on-scroll"
+              key={index}
+              className="glass-card p-8 rounded-3xl group cursor-pointer fade-in-on-scroll relative"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
+              {/* Recommended Badge */}
+              {plan.recommended && (
+                <div className="absolute top-4 right-4 z-20">
+                  <div className="bg-gradient-tropical text-primary-foreground px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-2">
+                    <Star className="w-4 h-4" fill="currentColor" />
+                    Recommended
+                  </div>
+                </div>
+              )}
+
               {/* Image */}
               <div className="relative overflow-hidden rounded-2xl mb-6 h-48">
                 <img
-                  src={card.image}
-                  alt={card.title}
+                  src={plan.image}
+                  alt={plan.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-deep-ocean/80 to-transparent" />
-                <div className="absolute bottom-4 left-4 text-primary">
-                  {card.icon}
-                </div>
               </div>
 
               {/* Content */}
-              <h3 className="text-foreground mb-4 group-hover:text-primary transition-colors duration-300">
-                {card.title}
+              <h3 className="text-foreground mb-4 group-hover:text-primary transition-colors duration-300 text-2xl font-semibold">
+                {plan.title}
               </h3>
               
               <p className="text-foreground/80 mb-6 leading-relaxed">
-                {card.description}
+                {plan.description}
               </p>
 
-              {/* CTA */}
-              <div className="flex items-center text-primary group-hover:text-warm-gold transition-colors duration-300">
-                <span className="font-medium mr-2">More Info</span>
-                <ArrowRight size={16} strokeWidth={1.5} className="transition-transform duration-300 group-hover:translate-x-1" />
+              {/* Pricing */}
+              <div className="mb-6 space-y-2">
+                <div className="flex justify-between items-center">
+                  <span className="text-sm text-foreground/60">Base Price ({plan.size})</span>
+                  <span className="text-2xl font-bold text-primary">{plan.basePrice}</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-sm text-foreground/60">Per Sq. Ft. Price</span>
+                  <span className="text-lg font-semibold text-foreground">{plan.sqftPrice}</span>
+                </div>
               </div>
+
+              {/* Benefits */}
+              <div className="mb-8 space-y-3">
+                {plan.benefits.map((benefit, benefitIndex) => (
+                  <div key={benefitIndex} className="flex items-center gap-3">
+                    <benefit.icon className="w-5 h-5 text-primary flex-shrink-0" strokeWidth={1.5} />
+                    <span className="text-sm text-foreground/80">{benefit.text}</span>
+                  </div>
+                ))}
+              </div>
+
+              {/* CTA Button */}
+              <button className="w-full btn-neumorphic px-6 py-3 text-sm font-medium text-primary-foreground rounded-2xl transition-all duration-300 hover:scale-105">
+                View Details & Inquire
+              </button>
             </div>
           ))}
         </div>
