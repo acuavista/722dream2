@@ -73,7 +73,7 @@ const Pricing = () => {
           {lots.map((lot, index) => (
             <div
               key={lot.id}
-              className={`relative glass-card p-8 rounded-3xl group cursor-pointer fade-in-on-scroll ${
+              className={`relative bg-white p-8 rounded-3xl group cursor-pointer fade-in-on-scroll shadow-lg border border-border/10 ${
                 lot.recommended ? 'ring-2 ring-primary transform scale-105' : ''
               }`}
               style={{ animationDelay: `${index * 0.2}s` }}

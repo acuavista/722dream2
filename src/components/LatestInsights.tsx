@@ -48,7 +48,7 @@ const LatestInsights = () => {
           {insights.map((insight, index) => (
             <article
               key={insight.id}
-              className="glass-card rounded-3xl overflow-hidden group cursor-pointer fade-in-on-scroll"
+              className="bg-white rounded-3xl overflow-hidden group cursor-pointer fade-in-on-scroll shadow-lg border border-border/10"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               {/* Image */}

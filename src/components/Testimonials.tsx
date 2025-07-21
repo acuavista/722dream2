@@ -73,7 +73,7 @@ const Testimonials = () => {
 
         {/* Testimonial Carousel */}
         <div className="relative">
-          <div className="glass-card rounded-3xl p-8 md:p-12 min-h-[400px] flex items-center">
+          <div className="bg-white rounded-3xl p-8 md:p-12 min-h-[400px] flex items-center shadow-lg border border-border/10">
             <div className="w-full">
               {testimonials.map((testimonial, index) => (
                 <div
@@ -129,14 +129,14 @@ const Testimonials = () => {
           {/* Navigation Arrows */}
           <button
             onClick={prevSlide}
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 glass-card p-3 rounded-full text-foreground hover:text-primary transition-all duration-300 hover:scale-110"
+            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white p-3 rounded-full text-foreground hover:text-primary transition-all duration-300 hover:scale-110 shadow-lg border border-border/10"
           >
             <ChevronLeft size={24} strokeWidth={1.5} />
           </button>
 
           <button
             onClick={nextSlide}
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 glass-card p-3 rounded-full text-foreground hover:text-primary transition-all duration-300 hover:scale-110"
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white p-3 rounded-full text-foreground hover:text-primary transition-all duration-300 hover:scale-110 shadow-lg border border-border/10"
           >
             <ChevronRight size={24} strokeWidth={1.5} />
           </button>

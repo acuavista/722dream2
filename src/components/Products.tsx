@@ -42,7 +42,7 @@ const Products = () => {
           {products.map((product, index) => (
             <div
               key={product.id}
-              className="glass-card p-8 rounded-3xl group cursor-pointer fade-in-on-scroll"
+              className="bg-white p-8 rounded-3xl group cursor-pointer fade-in-on-scroll shadow-lg border border-border/10"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               {/* Image */}

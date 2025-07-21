@@ -29,7 +29,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-deep-ocean border-t border-border">
+    <footer className="bg-white border-t border-border">
       <div className="container mx-auto max-w-7xl px-6 py-16">
         <div className="grid lg:grid-cols-5 md:grid-cols-2 gap-8 mb-12">
           {/* Company Information */}
