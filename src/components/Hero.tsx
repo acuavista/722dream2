@@ -19,21 +19,19 @@ const Hero = () => {
         style={{
           backgroundImage: `url('/lovable-uploads/b32d42c0-a8ef-42d6-87e1-a1647f54bb9a.png')`,
         }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-br from-deep-ocean/70 via-deep-ocean/50 to-transparent" />
-      </div>
+      />
 
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        <h1 className="text-black mb-6 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+        <h1 className="text-2xl font-bold text-primary tracking-wide mb-6 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
           BeachLovers
         </h1>
         
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-light text-black mb-4 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-light text-white mb-4 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
           Own Your Slice of this Tropical Paradise
         </h2>
         
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-light text-black mb-8 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-light text-white mb-8 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
           Easy Financing
         </h2>
         
