@@ -9,6 +9,7 @@ import LatestInsights from '../components/LatestInsights';
 import Gallery from '../components/Gallery';
 import Testimonials from '../components/Testimonials';
 import AboutUs from '../components/AboutUs';
+import InsightsSection from '../components/InsightsSection';
 import Footer from '../components/Footer';
 
 const Index = () => {
@@ -52,6 +53,7 @@ const Index = () => {
         <LatestInsights />
         <Gallery />
         <Testimonials />
+        <InsightsSection />
         <AboutUs />
       </main>
       
