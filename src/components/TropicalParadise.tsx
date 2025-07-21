@@ -66,7 +66,7 @@ const TropicalParadise = () => {
           {lotPlans.map((plan, index) => (
             <div
               key={index}
-              className="glass-card p-8 rounded-3xl group cursor-pointer fade-in-on-scroll relative"
+              className="bg-white p-8 rounded-3xl group cursor-pointer fade-in-on-scroll relative shadow-lg border border-border/10"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               {/* Recommended Badge */}
