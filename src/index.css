@@ -84,9 +84,8 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply /*bg-background*/ text-foreground;
     font-family: 'Inter', sans-serif;
-    background: var(--gradient-ocean);
     min-height: 100vh;
   }
   
