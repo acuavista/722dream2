@@ -56,9 +56,9 @@ const TropicalParadise = () => {
     <section id="why-cartagena" className="py-20 px-6 fade-in-on-scroll">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16">
-          <h2 className="text-foreground mb-6">Welcome to Your Tropical Paradise: Sand, Sun, and Beach Galore</h2>
+          <h2 className="text-foreground">Welcome to Your Tropical Paradise: Sand, Sun, and Beach Galore</h2>
           <p className="text-lg text-foreground/80 max-w-3xl mx-auto">
-            A clear, elegant, and comparison-friendly presentation of lot categories. Each lot plan designed to make your Caribbean dreams a reality.
+            
           </p>
         </div>
 

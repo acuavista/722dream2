@@ -33,13 +33,11 @@ const Navigation = () => {
 
   return (
     <>
-      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/90 backdrop-blur-md shadow-md' : 'bg-white/90 backdrop-blur-md'
-      }`}>
+      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-tropical-blue` + (isScrolled ? ' shadow-md' : '')}>
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <div className="text-2xl font-light text-primary tracking-wide">
+            <div className="text-[2.2rem] text-white tracking-wide font-bold" style={{ textShadow: '0 4px 16px rgba(0,0,0,0.7)' }}>
               BeachLovers
             </div>
 
@@ -49,7 +47,8 @@ const Navigation = () => {
                 <button
                   key={link.href}
                   onClick={() => handleNavClick(link.href)}
-                  className="text-foreground/90 hover:text-primary transition-all duration-300 font-light tracking-wide hover:scale-105"
+                  className="text-white hover:text-warm-gold transition-all duration-300 tracking-wide hover:scale-105 font-bold text-lg"
+                  style={{ textShadow: '0 4px 16px rgba(0,0,0,0.7)' }}
                 >
                   {link.label}
                 </button>
@@ -59,7 +58,8 @@ const Navigation = () => {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(true)}
-              className="md:hidden text-foreground hover:text-primary transition-colors"
+              className="md:hidden text-white hover:text-warm-gold transition-colors font-bold"
+              style={{ textShadow: '0 4px 16px rgba(0,0,0,0.7)' }}
             >
               <Menu size={24} strokeWidth={1.5} />
             </button>
@@ -68,25 +68,22 @@ const Navigation = () => {
       </nav>
 
       {/* Mobile Menu Overlay */}
-      <div className={`fixed inset-0 z-50 md:hidden transition-opacity duration-300 ${
-        isMobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
-      }`}>
+      <div className={`fixed inset-0 z-50 md:hidden transition-opacity duration-300 ` + (isMobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none')}>
         {/* Backdrop */}
         <div 
-          className="absolute inset-0 bg-deep-ocean/90 backdrop-blur-md"
+          className="absolute inset-0 bg-tropical-blue/95 backdrop-blur-md"
           onClick={() => setIsMobileMenuOpen(false)}
         />
         
         {/* Mobile Menu */}
-        <div className={`mobile-menu absolute top-0 right-0 h-full w-80 max-w-full bg-gradient-ocean border-l border-border ${
-          isMobileMenuOpen ? 'open' : ''
-        }`}>
+        <div className={`mobile-menu absolute top-0 right-0 h-full w-80 max-w-full bg-tropical-blue border-l border-border ` + (isMobileMenuOpen ? 'open' : '')}>
           <div className="p-6">
             {/* Close Button */}
             <div className="flex justify-end mb-8">
               <button
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="text-foreground hover:text-primary transition-colors"
+                className="text-white hover:text-warm-gold transition-colors font-bold"
+                style={{ textShadow: '0 4px 16px rgba(0,0,0,0.7)' }}
               >
                 <X size={24} strokeWidth={1.5} />
               </button>
@@ -98,8 +95,8 @@ const Navigation = () => {
                 <button
                   key={link.href}
                   onClick={() => handleNavClick(link.href)}
-                  className="block w-full text-left text-xl font-light text-foreground/90 hover:text-primary transition-all duration-300 py-2 animate-fade-in-up"
-                  style={{ animationDelay: `${index * 0.1}s` }}
+                  className="block w-full text-left text-[1.375rem] text-white hover:text-warm-gold transition-all duration-300 py-2 animate-fade-in-up font-bold"
+                  style={{ textShadow: '0 4px 16px rgba(0,0,0,0.7)' }}
                 >
                   {link.label}
                 </button>

@@ -8,7 +8,7 @@
 @layer base {
   :root {
     /* Tropical Color Palette - Inspired by Purple Mockup */
-    --background: 0 0% 100%;
+    --background: 0 0% 98%;
     --foreground: 0 0% 5%;
     
     /* Tropical Ocean Blues */
@@ -53,7 +53,7 @@
     /* Luxury Gradients */
     --gradient-tropical: linear-gradient(135deg, hsl(var(--tropical-blue)), hsl(var(--tropical-blue-light)));
     --gradient-sunset: linear-gradient(135deg, hsl(var(--warm-gold)), hsl(var(--warm-accent)));
-    --gradient-ocean: linear-gradient(180deg, hsl(260 90% 20%), hsl(260 70% 35%), hsl(260 70% 25%));
+    --gradient-ocean: linear-gradient(180deg, hsl(200 100% 95%), hsl(200 80% 90%), hsl(200 60% 85%));
     --gradient-glass: linear-gradient(135deg, hsl(var(--glass)), hsl(var(--glass-border)));
     
     /* Luxury Shadows */
