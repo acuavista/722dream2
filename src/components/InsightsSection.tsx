@@ -1,26 +1,26 @@
 import { ArrowRight } from 'lucide-react';
-import tropicalBeach1 from '../assets/tropical-beach-1.jpg';
-import tropicalBeach2 from '../assets/tropical-beach-2.jpg';
-import tropicalBeach3 from '../assets/tropical-beach-3.jpg';
+import whyctg from '../assets/whyctg.png';
+import bocagrande from '../assets/bocagrande.png';
+import whynow from '../assets/whynow.png';
 
 const InsightsSection = () => {
   const insights = [
     {
       title: "Why Cartagena",
       description: "The rich and famous spend millions of dollars to buy their private tropical hideaways, and enjoy the summer sun, sand and surf all year around. Now you too can delight in these same pleasures at a fraction of what they pay. Welcome to Cartagena, Colombia. There are places that capture your attention—and then there are places like Cartagena, that steal your heart and soul lock, stock, and barrel.",
-      image: tropicalBeach1,
+      image: whyctg,
       link: "/why-cartagena"
     },
     {
       title: "Why Properties",
       description: "Over the past five years, property values in Cartagena have appreciated between 8% and 12% annually, depending on the neighborhood and type of investment. This is no accident. The city has seen a surge in both domestic and foreign demand, with buyers ranging from vacation homeowners to entrepreneurs and digital nomads drawn to the warm climate and vibrant urban life.",
-      image: tropicalBeach2,
+      image: bocagrande,
       link: "/why-properties"
     },
     {
       title: "Why Now",
       description: "With over 3.5 million visitors in 2024, Cartagena's international profile is growing rapidly. And with the completion of the 2nd international airport, the city is expecting to quadruple the number of visitors. As demand increases, so do prices. Those who act now are getting in on the ground floor of a market destined for exponential growth.",
-      image: tropicalBeach3,
+      image: whynow,
       link: "/why-now"
     }
   ];
@@ -29,7 +29,7 @@ const InsightsSection = () => {
     <section className="py-20 px-6 fade-in-on-scroll">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16">
-          <h2 className="text-foreground mb-6">Cartagena: Playground of the Rich and Famous</h2>
+          <h2 className="text-foreground mb-6 font-bold">Welcome to Cartagena</h2>
           <p className="text-lg text-foreground/80 max-w-3xl mx-auto">
             Discover why now is the perfect time to invest in Cartagena's tropical paradise
 

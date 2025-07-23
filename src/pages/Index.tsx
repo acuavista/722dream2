@@ -47,10 +47,9 @@ const Index = () => {
       <main className={`transition-all duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
         <Hero />
         <InsightsSection />
+        <Products />
         <TropicalParadise />
         <MessageForm />
-        <Products />
-        <Pricing />
         <LatestInsights />
         <Gallery />
         <Testimonials />

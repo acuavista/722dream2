@@ -24,11 +24,6 @@ const AboutUs = () => {
                 Founded by seasoned real estate professionals with deep local knowledge and international experience, 
                 we bridge the gap between dreamers and their ideal tropical paradise.
               </p>
-              <div className="mt-6 p-4 bg-gradient-glass rounded-2xl">
-                <p className="text-primary text-sm font-medium">
-                  Local Expertise • Global Vision
-                </p>
-              </div>
             </div>
           </div>
 
@@ -44,11 +39,6 @@ const AboutUs = () => {
                 transparent processes, and comprehensive support. We believe that owning a piece of paradise 
                 shouldn't be limited to the ultra-wealthy, but accessible to anyone with a dream.
               </p>
-              <div className="mt-6 p-4 bg-gradient-glass rounded-2xl">
-                <p className="text-primary text-sm font-medium">
-                  Making Dreams Accessible
-                </p>
-              </div>
             </div>
           </div>
 
@@ -64,11 +54,6 @@ const AboutUs = () => {
                 From initial consultation to property development and beyond, we're your trusted partner in creating 
                 lasting memories and building generational wealth in paradise.
               </p>
-              <div className="mt-6 p-4 bg-gradient-glass rounded-2xl">
-                <p className="text-primary text-sm font-medium">
-                  Your Success, Our Commitment
-                </p>
-              </div>
             </div>
           </div>
         </div>

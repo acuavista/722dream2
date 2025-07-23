@@ -93,17 +93,14 @@ const LatestInsights = () => {
                 </p>
 
                 {/* CTA */}
-                <div className="flex items-center text-primary group-hover:text-warm-gold transition-colors duration-300">
+                <a
+                  href={insight.link}
+                  className="flex items-center text-primary group-hover:text-warm-gold transition-colors duration-300"
+                  style={{ textDecoration: 'none' }}
+                >
                   <span className="font-medium mr-2 text-sm">Continue Reading</span>
-                  \<a
-  href={insight.link}
-  className="flex items-center text-primary group-hover:text-warm-gold transition-colors duration-300"
-  style={{ textDecoration: 'none' }}
->
-  <span className="font-medium mr-2 text-sm">Continue Reading</span>
-  <ArrowRight size={14} strokeWidth={1.5} className="transition-transform duration-300 group-hover:translate-x-1" />
-</a>
-                </div>
+                  <ArrowRight size={14} strokeWidth={1.5} className="transition-transform duration-300 group-hover:translate-x-1" />
+                </a>
               </div>
             </article>
           ))}

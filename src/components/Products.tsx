@@ -32,9 +32,9 @@ const Products = () => {
     <section id="products" className="py-20 px-6 fade-in-on-scroll">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16">
-          <h2 className="text-foreground mb-6">Your Paradise, Your Choice</h2>
-          <p className="text-lg text-foreground/80 max-w-2xl mx-auto">
-            From prime lots to complete construction services and flexible financing - everything you need for your tropical paradise
+          <h2 className="text-foreground mb-6 font-bold">We Have Everything You Need</h2>
+          <p className="text-[1.5625rem] text-foreground/80 max-w-2xl mx-auto" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.18)' }}>
+            From financing your land purchase to building your dream retreat, and everything in between, we have you covered.
           </p>
         </div>
 

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Send, Shield } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 const MessageForm = () => {
   const [formData, setFormData] = useState({
@@ -59,9 +60,23 @@ const MessageForm = () => {
     
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
+    try {
+      // Prepare the template parameters
+      const templateParams = {
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        city: formData.city,
+        state: formData.state,
+        country: formData.country,
+        email: formData.email,
+        phone: formData.phone,
+        interests: formData.interests.join(', '),
+        otherInterest: formData.otherInterest,
+        message: formData.message,
+      };
+
+      await emailjs.send(service_t04dqj8, template_qz3o5hd, templateParams, UFm769T3lRvB3ntIC);
+
       alert('Thank you for your interest! We will contact you soon.');
       setFormData({
         firstName: '',
@@ -76,7 +91,12 @@ const MessageForm = () => {
         message: ''
       });
       setCaptchaVerified(false);
-    }, 2000);
+    } catch (error) {
+      alert('There was an error sending your message. Please try again later.');
+      console.error('EmailJS error:', error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -187,7 +207,7 @@ const MessageForm = () => {
                   onChange={handleInputChange}
                   required
                   className="w-full px-4 py-3 bg-input border border-border rounded-xl text-foreground placeholder-foreground/50 focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300"
-                  placeholder="your.email@example.com"
+                  placeholder="your.stanp193@gmail.com"
                 />
               </div>
               <div>
