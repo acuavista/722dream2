@@ -8,7 +8,7 @@ const Pricing = () => {
       description: 'Direct ocean access, unparalleled views. The pinnacle of Caribbean luxury.',
       pricePerSqFt: '$0/sf',
       baseSize: '0 sf',
-      basePrice: '$200,000',
+      basePrice: '$0',
       icon: <Crown size={24} strokeWidth={1.5} />,
       benefits: [
         'Highest appreciation potential',
@@ -43,7 +43,7 @@ const Pricing = () => {
       title: 'Paradise Parcels',
       description: 'Secluded, lush, and serene inland properties. Embrace nature\'s tranquility.',
       pricePerSqFt: '$0/sf',
-      baseSize: '2,000 sf',
+      baseSize: '0 sf',
       basePrice: '$0',
       icon: <Trees size={24} strokeWidth={1.5} />,
       benefits: [
