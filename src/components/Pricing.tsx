@@ -26,7 +26,7 @@ const Pricing = () => {
       description: 'Short, easy walk to pristine beaches. The perfect blend of luxury, convenience, and value.',
       pricePerSqFt: '$0/sf',
       baseSize: '0 sf',
-      basePrice: '$0,000',
+      basePrice: '$0',
       icon: <Waves size={24} strokeWidth={1.5} />,
       benefits: [
         'Strong investment return',
