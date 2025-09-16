@@ -8,8 +8,8 @@ const TropicalParadise = () => {
     {
       title: "Premium Beachfront",
       description: "Wake up to the Caribbean Sea. Direct access to pristine sands and unparalleled views. Your ultimate luxury escape.",
-      basePrice: "$200,000",
-      sqftPrice: "$100/sf",
+      basePrice: "$00,000",
+      sqftPrice: "$00/sf",
       size: "2,000 sf",
       image: tropicalBeach1,
       benefits: [
@@ -23,8 +23,8 @@ const TropicalParadise = () => {
     {
       title: "Beach Access",
       description: "Just steps from the shore. Enjoy beach living without the beachfront premium. The perfect balance of value and convenience.",
-      basePrice: "$140,000",
-      sqftPrice: "$70/sf",
+      basePrice: "$0,000",
+      sqftPrice: "$0/sf",
       size: "2,000 sf",
       image: tropicalBeach2,
       benefits: [
@@ -38,8 +38,8 @@ const TropicalParadise = () => {
     {
       title: "Paradise Parcels",
       description: "Secluded havens nestled amidst lush Colombian landscapes. Ideal for tranquil retreats and connecting with nature.",
-      basePrice: "$55,000",
-      sqftPrice: "$27.5/sf", 
+      basePrice: "$0,000",
+      sqftPrice: "$0/sf", 
       size: "2,000 sf",
       image: tropicalBeach3,
       benefits: [
